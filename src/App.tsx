@@ -1,6 +1,5 @@
-import { ResultData } from "./components/data";
-
 import "./App.css";
+import { ResultData } from "./components/data";
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 export interface Element {
   name: string;
-  data?: {
-    Color?: string;
-    color?: string;
-    capacity?: string;
-    Capacity?: string;
+  data: {
+    color: string;
+    Color: string;
+    capacity: string;
+    Capacity: string;
   } | null;
 }

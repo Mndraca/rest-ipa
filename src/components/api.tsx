@@ -3,8 +3,11 @@ export async function getData(url: string) {
     const response = await fetch(url);
     const res = await response.json();
 
+    if (!response.ok) {
+      console.log("Something went wrong with the response");
+    }
     return res;
-  } catch (error) {
-    console.error("There is error", error);
+  } catch (err) {
+    console.error(`Something went wrong`, err);
   }
 }
